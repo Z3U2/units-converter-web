@@ -1,0 +1,20 @@
+{
+  "name": "converter",
+  "version": "1.0.0",
+  "description": "unit conversion",
+  "main": "server.js",
+  "dependencies": {
+    "convert-units": "^1.3.1",
+    "jquery": "^3.1.1",
+    "webpack": "^2.2.0-rc.3",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "",
+    "bundle": "webpack --config webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

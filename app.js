@@ -1,6 +1,7 @@
 'use-strict'
 const convertModule = require('./converter-module');
-const $ = require('jquery');
+require('bootstrap/dist/js/bootstrap');
+require('bootstrap-select/dist/js/bootstrap-select');
 
 const measures = convertModule.getMeasures();
 
@@ -33,11 +34,11 @@ $(window).on('hashchange', () => {
   const hash = window.location.hash.slice(1);
   if (hash.length>0) {
     let units = convertModule.getUnits(hash);
-    var html;
+    var html = "";
     for (unit of units) {
       html = html + " <option value="+unit.abbr+">"+unit.singular+"</option> "
     };
-    $(".units").html(html)
+    $(".units #from").load('<select class="units selectpicker" id="to">"+html+"</select>')
   }
 
 });

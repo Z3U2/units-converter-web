@@ -1,5 +1,6 @@
 'use-strict'
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry : './app.js',
@@ -7,4 +8,11 @@ module.exports = {
     path : path.resolve(__dirname,'dist'),
     filename : 'bundle.js'
   }
+  // plugins : [
+  //   new webpack.ProvidePlugin({
+  //     jQuery : 'jquery',
+  //     $ : 'jquery',
+  //     jquery : 'jquery'
+  //   })
+  // ]
 };

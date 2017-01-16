@@ -5,6 +5,7 @@
     <title>Converter app</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="dist/bundle.js" charset="utf-8"></script>
   </head>
   <body>
     <nav class="navbar navbar-default">
@@ -15,13 +16,11 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle"
-              data-toggle="dropdown" role="button"
-              aria-haspopu="true" aria-expanded="false">
-              Choose Measure Type <span class="caret">
-              </span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Measure Type <span class="caret"></span>
+              </a>
               <ul id="measures" class="dropdown-menu">
-                
+
               </ul>
             </li>
           </ul>
@@ -40,5 +39,4 @@
       <span id="convertedValue"></span>
     </div>
   </body>
-  <script src="dist/bundle.js" charset="utf-8"></script>
 </html>

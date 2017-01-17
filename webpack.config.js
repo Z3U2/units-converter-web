@@ -7,12 +7,12 @@ module.exports = {
   output : {
     path : path.resolve(__dirname,'dist'),
     filename : 'bundle.js'
-  }
-  // plugins : [
-  //   new webpack.ProvidePlugin({
-  //     jQuery : 'jquery',
-  //     $ : 'jquery',
-  //     jquery : 'jquery'
-  //   })
-  // ]
+  },
+  plugins : [
+    new webpack.ProvidePlugin({
+      jquery: 'jquery',
+      jQuery: 'jquery',
+      $: 'jquery'
+    })
+  ]
 };

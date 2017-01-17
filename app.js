@@ -37,9 +37,9 @@ $(document).ready(() => {
       $('#value').keyup(convert)
     });
   }
-  // else {
-  //   $()
-  // }
+  else {
+    $("#view").load("views/landingpage.html");
+  }
 });
 
 $(window).on('hashchange', () => {

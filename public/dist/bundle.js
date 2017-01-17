@@ -16621,7 +16621,8 @@ $(document).ready(() => {
   if (hash.length>0) {
     $('#view').load("views/"+hash+".html",() => {
       $('.selectpicker').selectpicker('render').addClass('col-sm-12 col-xs-12').selectpicker('setStyle');
-      $('#value').keyup(convert)
+      $('#value').keyup(convert);
+      $('.selectpicker').change(convert);
     });
   }
   else {
@@ -16634,6 +16635,7 @@ $(window).on('hashchange', () => {
   if (hash.length>0) {
     $('#view').load("views/"+hash+".html",() => {
       $('.selectpicker').selectpicker('render').addClass('col-sm-12 col-xs-12').selectpicker('setStyle');
+      $('.selectpicker').change(convert);
       $('#value').keyup(convert);
     });
   }

@@ -46,8 +46,8 @@ $(window).on('hashchange', () => {
   const hash = window.location.hash.slice(1);
   if (hash.length>0) {
     $('#view').load("views/"+hash+".html",() => {
-      $('.selectpicker').selectpicker('render');
-      $('#value').keyup(convert)
+      $('.selectpicker').selectpicker('render').addClass('col-sm-12 col-xs-12').selectpicker('setStyle');
+      $('#value').keyup(convert);
     });
   }
 });

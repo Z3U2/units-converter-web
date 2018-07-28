@@ -13,8 +13,3 @@ In the project directory run :
 ```
 npm run bundle
 ```
-
-### Caution
-I'm aware that the views generator script is unreadable, will make it human as soon as possible.
-
-### License : TODO
